@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Fem | Contact form</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__content">
+        <h1 class="card__title">Contact Us</h1>
+        <form action="" id="contact-form">
+          <!-- Flex row-1 -->
+          <div class="row-1 horiz-flex">
+            <div class="row-1__left flex-verticle">
+              <label for="">First Name <span class="star-symbol">*</span> </label>
+              <input class="text-field" type="text" id="fist-name" />
+              <p id="error-fName" class="error-message">This field is required</p>
+            </div>
+            <div class="row-1__right flex-verticle">
+              <label for="">Last Name <span class="star-symbol">*</span> </label>
+              <input class="text-field" type="text" id="last-name" />
+              <p id="error-lName" class="error-message">This field is required</p>
+            </div>
+          </div>
+          <!-- Flex row-2 -->
+          <div class="row-2 flex-verticle">
+            <label for=""> Email Address <span class="star-symbol">*</span> </label>
+            <input class="text-field" type="email" id="email" />
+            <p id="error-email-1" class="error-message">This field is required</p>
+            <p id="error-email-2" class="error-message">Please enter a valid email address</p>
+          </div>
+          <!-- Flex row-3 -->
+          <div class="row-3 flex-verticle">
+            <label for=""> Query Type <span class="star-symbol">*</span> </label>
+            <div class="horiz-flex mr-bl mobile-gap">
+              <div id="query-box-1" class="row-3__inner-box text-field">
+                <input type="checkbox" id="gen-enq" />
+                <span class="selection-text">General Enquiry</span>
+              </div>
+              <div id="query-box-2" class="row-3__inner-box text-field">
+                <input type="checkbox" id="sup-req" />
+                <span class="selection-text">Support Request</span>
+              </div>
+            </div>
+            <p id="error-query" class="error-message">Please select a query type</p>
+          </div>
+          <!-- Flex row-4 -->
+          <div class="row-4 flex-verticle">
+            <label for=""> Message<span class="star-symbol">*</span> </label>
+            <textarea class="text-field user-message" id="user-text-message"></textarea>
+            <p id="error-user-message" class="error-message">This field is required</p>
+          </div>
+          <!-- Flex row-5 -->
+          <div class="row-5 flex-verticle">
+            <div>
+              <input type="checkbox" id="consent" />
+              <label for=""> I consent to being contacted by the team <span class="star-symbol">*</span> </label>
+            </div>
+            <p id="error-consent" class="error-message">To submit this form, please consent to being contacted</p>
+          </div>
+          <!-- submit button -->
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-- Success Message -->
+    <div id="success-message" class="success-message-container flex-verticle">
+      <div class="success-icon-box">
+        <img src="./assets/images/icon-success-check.svg" />
+        <span>Message Sent!</span>
+      </div>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+  
+  This field is required
+
+  Last Name
+  This field is required
+
+  Email Address
+  Please enter a valid email address
+  This field is required
+
+  Query Type
+  General Enquiry
+  Support Request
+  Please select a query type
+
+  Message
+  This field is required
+
+  I consent to being contacted by the team
+  To submit this form, please consent to being contacted
+
+ 
+
+  Message Sent!
+  Thanks for completing the form. We'll be in touch soon! -->
